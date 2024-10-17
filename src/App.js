@@ -27,7 +27,7 @@ const App = () => {
     return <Preloader />;
   }
     return (
-      <Router>
+      <Router basename="/portfolio-react">
         <div className="app">
         <Navbar />
           <div className='main-content'>

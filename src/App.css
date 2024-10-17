@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700&display=swap');
+.app {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; /* Adjust to screen height */
+  background: radial-gradient(circle at bottom right, #2E004A, #0D0221 60%);
+  background-color: #0D0221;
+  min-height: 100%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+body {
+ /* min-height: 100vh;
+  width: 100%;*/
+  font-family: 'League Spartan', sans-serif;
+  min-height: 100vh;
+  z-index: 1000;
+  display: flex;
+  display: flexbox;
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+  overflow-x: hidden;
+  background: radial-gradient(circle at bottom right, #2E004A, #0D0221 60%);
+  background-color: #0D0221;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.main-content {
+ flex-grow: 1;
+  padding: 20px; /* Optional padding */
+  margin-right: auto;
+  margin-top: 70px; /* Account for fixed navbar */
+  margin-bottom: 100px; /* Account for fixed footer */
+  background: radial-gradient(circle at bottom right, #2E004A, #0D0221 60%);
+  background-color: #0D0221;
+  background: transparent url('https://www.transparenttextures.com/patterns/stardust.png') repeat;
+  opacity: 0.9;
+  animation: twinkle 2s infinite; /* Apply twinkle animation */
+  position: relative;
+}
+@media (max-width: 768px) {
+  .main-content {
+    padding: 10%;
+    margin-right: 1cm;
+    flex-direction: column;
+    margin-bottom: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+}
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 1000;
+  margin-top: auto;
+}
+
+/* Scrollbar styles */
+::-webkit-scrollbar {
+  width: 30px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: purple;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: darkviolet;
+}
+
+* {
+  scrollbar-color: purple #f1f1f1;
+  scrollbar-width: thin;
+}

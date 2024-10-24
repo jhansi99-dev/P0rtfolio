@@ -12,7 +12,6 @@
   margin-top: 0.5cm;
    justify-content: center;
     transition: transform 0.3s ease-in-out;
-    font-family: Georgia, 'Times New Roman', Times, serif;
   }
   @media (max-width: 768px) {
     .project-card {

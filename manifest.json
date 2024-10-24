@@ -1,0 +1,25 @@
+{
+  "short_name": "My React App",
+  "name": "My Custom React App",
+  "icons": [
+    {
+      "src": "custom-icon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "custom-logo192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "custom-logo512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/home",
+  "display": "fullscreen",
+  "theme_color": "#123456",
+  "background_color": "#abcdef"
+}
